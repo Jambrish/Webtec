@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Secret Glow</title>
+    <link rel="stylesheet" href="register.css"> 
+    <!-- Links the external CSS stylesheet for styling -->
+    <script src="register.js" defer></script> 
+    <!-- Links the external JavaScript file for handling form submission and other functionalities. The "defer" attribute ensures the script is executed after the HTML document is parsed. -->
+</head>
+<body>
+    <section class="register-section">
+        <div class="logo">
+            <img src="Images/logo.png" alt="Secret Glow Logo"> 
+            <!-- Displays the logo image. The "alt" attribute provides alternative text for screen readers and in case the image fails to load. -->
+        </div>
+        
+        <div class="register-form-container">
+            <h1>Create Your Account</h1> 
+            <!-- Heading for the registration form -->
+            <form id="registerForm"> 
+                <!-- The form element with an ID for easy reference in JavaScript -->
+                <div class="form-group">
+                    <label for="username">Username:</label> 
+                    <!-- Label associated with the username input field -->
+                    <input type="text" id="username" name="username" required> 
+                    <!-- Text input field for username. "required" attribute ensures the field must be filled. -->
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required> 
+                    <!-- Email input field. "type" attribute ensures the input is validated as an email address. -->
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required> 
+                    <!-- Password input field. "type" attribute hides the input for security. -->
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required> 
+                    <!-- Confirmation password input field for matching the entered password. -->
+                </div>
+                <button type="submit" class="btn primary">Register</button> 
+                <!-- Submit button for the form. -->
+            </form>
+            <p class="login-link">
+                Already have an account? <a href="login.html">Login here</a> 
+                <!-- Provides a link for users who already have an account. -->
+            </p>
+        </div>
+    </section>
+</body>
+</html>

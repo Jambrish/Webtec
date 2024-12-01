@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+    margin: 0; /* Resets default margin */
+    padding: 0; /* Resets default padding */
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Sets the main font for the body, using 'Poppins' as the primary choice, then Arial as a fallback, and finally sans-serif for broader compatibility */
+    color: #333; /* Sets the text color to a dark gray */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Applies a semi-transparent black gradient overlay */
+                url('Images/background.jpg') center/cover no-repeat; /* Sets the background image, centering it and scaling it to cover the entire viewport */
+}
+
+/* Login Section Styling */
+.login-section {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Arranges items vertically */
+    justify-content: center; /* Centers items along the vertical axis */
+    align-items: center; /* Centers items along the horizontal axis */
+    min-height: 100vh; /* Ensures the section takes up the full viewport height */
+    background-size: cover; /* Ensures the background image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+    padding: 2em; /* Adds padding around the content */
+}
+
+/* Register Section Styling */
+.register-section {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Arranges items vertically */
+    justify-content: center; /* Centers items along the vertical axis */
+    align-items: center; /* Centers items along the horizontal axis */
+    min-height: 100vh; /* Ensures the section takes up the full viewport height */
+    background-size: cover; /* Ensures the background image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+    padding: 2em; /* Adds padding around the content */
+}
+
+/* Logo Styling */
+.logo {
+    text-align: center; /* Centers the logo text */
+    margin-bottom: 2em; /* Adds space between the logo and the form */
+}
+
+.logo img {
+    height: 250px; /* Sets the logo image height */
+    width: auto; /* Allows the width to adjust proportionally to maintain aspect ratio */
+    animation: float 3s ease-in-out infinite; /* Applies a floating animation to the logo */
+}
+
+@keyframes float { /* Defines the floating animation */
+    0%, 100% { transform: translateY(0); } /* Starts and ends with no vertical translation */
+    50% { transform: translateY(-10px); } /*  At 50% of the animation, moves the logo 10 pixels upwards */
+}
+
+/* Form Container */
+.register-form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Sets a semi-transparent white background */
+    padding: 3em; /* Adds padding around the form content */
+    border-radius: 10px; /* Rounds the corners of the container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to the container */
+    width: 400px; /* Sets the default container width */
+    max-width: 90%; /* Limits the container width to 90% of its parent element */
+}
+
+/* Form Styling */
+.register-form-container h1 {
+    text-align: center; /* Centers the heading */
+    margin-bottom: 2em; /* Adds space between the heading and the form fields */
+    color: #a4665e; /* Sets the heading color */
+}
+
+.form-group {
+    margin-bottom: 1em; /* Adds space between form groups */
+}
+
+.form-group label {
+    display: block; /* Makes the label a block element, taking up the full width */
+    margin-bottom: 0.5em; /* Adds space between the label and the input field */
+    font-weight: bold; /* Makes the label text bold */
+    color: #a4665e; /* Sets the label color */
+}
+
+.form-group input {
+    width: 100%; /* Makes the input field take up the full width of its container */
+    padding: 1em; /* Adds padding around the input text */
+    border: 1px solid #ccc; /* Adds a light gray border */
+    border-radius: 5px; /* Rounds the corners of the input field */
+    box-sizing: border-box; /* Ensures padding and border are included in the input field's total width */
+    font-size: 1em; /* Sets the input field text size */
+}
+
+/* Button Styling */
+.btn {
+    display: block; /* Makes the button a block element, taking up the full width of its container */
+    margin: 0 auto; /* Centers the button horizontally */
+    padding: 0.8em 1.5em; /* Adds padding around the button text */
+    font-size: 1em; /* Sets the button text size */
+    font-weight: bold; /* Makes the button text bold */
+    text-decoration: none; /* Removes any default text decoration */
+    color: #fff; /* Sets the button text color to white */
+    background: linear-gradient(90deg, #a4665e, #cfa5a1); /* Applies a linear gradient to the background of the button */
+    border: none; /* Removes the default button border */
+    border-radius: 50px; /* Rounds the corners of the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    transition: all 0.3s ease; /* Adds a smooth transition effect for hover and active states */
+    width: 100%; /* Makes the button take up full width of its container */
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #e9c6c3, #d1a6a0); /* Changes the gradient colors on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increases the shadow on hover */
+    transform: translateY(-3px); /* Moves the button slightly upwards on hover */
+}
+
+.btn:active {
+    transform: translateY(0); /* Resets the vertical translation when the button is pressed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusts the shadow when the button is pressed */
+}
+
+/* Login Link */
+.login-link {
+    text-align: center; /* Centers the login link text */
+    margin-top: 1em; /* Adds space between the button and the login link */
+    font-size: 0.9em; /* Sets the login link text size */
+}
+
+.login-link a {
+    color: #a4665e; /* Sets the login link text color */
+    text-decoration: none; /* Removes any default text decoration */
+}
+
+.login-link a:hover {
+    text-decoration: underline; /* Adds an underline to the login link on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) { /* Applies styles when the viewport width is less than 600 pixels */
+    .logo span {
+        font-size: 1.5em; /* Adjusts the logo text size for smaller screens */
+    }
+
+    .register-form-container {
+        padding: 1.5em; /* Adjusts the padding for smaller screens */
+        max-width: 90%; /* Adjusts the maximum width for smaller screens */
+    }
+
+    .register-section h1 {
+        font-size: 2em; /* Adjusts the heading size for smaller screens */
+    }
+
+    .btn {
+        width: 100%; /* Makes the button take up full width of its container for smaller screens */
+    }
+}
